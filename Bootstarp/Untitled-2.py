@@ -22,7 +22,7 @@ bootstrap4 = bootstrap_data(data_orig ,50000)
 bootstrap_means = [
     np.mean(bootstrap1),
     np.mean(bootstrap2),
-    mean_orig,
+    mean_orig,#this ensures that the middle most plot is the original mean
     np.mean(bootstrap3),
     np.mean(bootstrap4)
 ]
@@ -31,6 +31,7 @@ labels = ["n=50","n=500","original","n=5000","n=50000"]
 
 plt.bar(labels , bootstrap_means , color = ["blue" , "green" , "red" , "purple" , "orange"] , width = 0.4)
 plt.show()
+
 
 
 
