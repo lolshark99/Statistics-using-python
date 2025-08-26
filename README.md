@@ -1,2 +1,3 @@
 This repo is made for the sole purpose of practising baisc stats method for data analysis
-Basic code for bootstrap has been implemented
+Basic code for bootstrap has been implemented..
+Working on various type of distributions..
