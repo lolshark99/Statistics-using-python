@@ -11,7 +11,7 @@ n = int(input("Enter no of bootstraps here : "))
 def bootstrap(X , n):
     X_mean_store = []
     for i in range(n):
-        sample = np.random.choice(X , size = len(X) , replace= True)
+        sample = np.random.choice(X , size = len(X) , replace= True)# this implements the sampling with replacing
         X_mean = sample.mean()
         X_mean_store.append(X_mean)
     return X_mean_store
@@ -39,6 +39,7 @@ plt.hist(means2, bins=30, color="skyblue", edgecolor="black", alpha=0.7)
 plt.axvline(lower_bound, color="red", linestyle="--", linewidth=2, label = "Lower Bound")
 plt.axvline(upper_bound , color = "red" , linestyle = "--" , label = "Upper_bound")
 plt.show()
+
 
 
 
