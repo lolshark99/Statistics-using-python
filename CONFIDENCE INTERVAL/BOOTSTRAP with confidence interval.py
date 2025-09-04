@@ -18,7 +18,7 @@ def bootstrap(X , n):
         
 means = bootstrap(X , n)      
 means2 = bootstrap(X , 1000) # bigger n for a more stable bootstrap  
-
+# this computes the lower bound and upper bound of the which represents the left and right sides of the plot containing CI
 c = int(input("Enter the confidence interval here :"))
 trimed_portion = (100-c) / 2
 upper_bound = np.percentile(means2 , (100 -trimed_portion))
@@ -39,6 +39,7 @@ plt.hist(means2, bins=30, color="skyblue", edgecolor="black", alpha=0.7)
 plt.axvline(lower_bound, color="red", linestyle="--", linewidth=2, label = "Lower Bound")
 plt.axvline(upper_bound , color = "red" , linestyle = "--" , label = "Upper_bound")
 plt.show()
+
 
 
 
