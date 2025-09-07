@@ -12,7 +12,7 @@ def bootstrap_data(data , n):
         bootstraped_mean = np.mean(data_after)
         bootstraped_mean_array.append(float(bootstraped_mean))
     return bootstraped_mean_array
-
+#the below block of code when plotted shows that having a greater bootstrapped examples and its mean is almost equal to the original mean..
 
 bootstrap1 = bootstrap_data(data_orig ,50)
 bootstrap2 = bootstrap_data(data_orig ,500)
@@ -31,6 +31,7 @@ labels = ["n=50","n=500","original","n=5000","n=50000"]
 
 plt.bar(labels , bootstrap_means , color = ["blue" , "green" , "red" , "purple" , "orange"] , width = 0.4)
 plt.show()
+
 
 
 
