@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 X = np.array([5234, 7890, 10021, 4567, 8765, 9340, 10234, 11200, 8765, 6500])# A dummy dataset representing the number of steps walked over a timespan of 10 days
 
-X_mean = X.mean()
+X_mean = X.mean()#mean of the bootstraped data_points
 
 n = int(input("Enter no of bootstraps here : "))
  
@@ -39,6 +39,7 @@ plt.hist(means2, bins=30, color="skyblue", edgecolor="black", alpha=0.7)
 plt.axvline(lower_bound, color="red", linestyle="--", linewidth=2, label = "Lower Bound")
 plt.axvline(upper_bound , color = "red" , linestyle = "--" , label = "Upper_bound")
 plt.show()
+
 
 
 
