@@ -1,0 +1,1 @@
+THIS FOLDER is about types of distribution , z scores , t test and QQ plots.
