@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy import stats
 data = np.array([42, 55, 47, 63, 58, 49, 51, 60, 53, 46])
 mu = np.mean(data)
-
+// below the function finds the standard deviation of the dataset.
 def sd(data ,mu):
     variance = np.sum((data - mu) ** 2) / (len(data) - 1)
     sd = np.sqrt(variance)
@@ -33,4 +33,5 @@ stats.probplot(data, dist="norm", plot=plt)
 plt.title("Q-Q Plot for Normality Check")
 plt.grid(True)
 plt.tight_layout()
+
 plt.show()
