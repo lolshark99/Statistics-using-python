@@ -8,7 +8,7 @@ def sd(data ,mu):
     variance = np.sum((data - mu) ** 2) / (len(data) - 1)
     sd = np.sqrt(variance)
     return sd
-
+// calculating the z_scores ..
 def calculate_zscores(data , mu , sd):
     z_scores = []
     for x in data:
@@ -35,3 +35,4 @@ plt.grid(True)
 plt.tight_layout()
 
 plt.show()
+
